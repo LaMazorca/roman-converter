@@ -1,0 +1,89 @@
+:root{
+    font-size: 62.5%;
+    --green: #888C03;
+    --light-yellow: #F2B705;
+    --yellow: #F29F05;
+    --bold-yellow: #D97904;
+    --brown: #8C3503;
+    font-family: "Ubuntu", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--green);
+    color: var(--brown);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem;
+    margin-top: -1rem;
+}
+
+label, input, button{
+    margin: 1rem;
+    width: 75%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display{
+    border: .5rem solid var(--bold-yellow);
+    background-color: rgb(242, 183, 5,0.5);
+    width: 25%;
+}
+
+.hidden{
+    display: none;
+}
+
+.error{
+    border-color: #f00;
+    background-color: rgb(255, 0, 0,0.5);
+    color: var(--bold-yellow);
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+#displayInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+}
+
+#convert-btn{
+    border: .5rem solid var(--green);
+    background-color: var(--yellow);
+    border-radius: .5rem;
+    color: var(--brown);
+    font-weight: 500;
+}
+
+#output{
+    text-align: center;
+}
